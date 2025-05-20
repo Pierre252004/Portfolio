@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.G. Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!--- CSS --->
+    <style>
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #0d0d0d;
+            color: #e6e6e6;
+        }
+        header {
+            background-color: #111;
+            padding: 3rem 1rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid #00ffcc;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (min-width: 576px) {
+            .profile-header {
+                flex-direction: row;
+                gap: 1.5rem;
+            }
+        }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #00ffcc;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #00ffcc;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #cccccc;
+        }
+        nav {
+            background-color: #1a1a1a;
+            border-bottom: 2px solid #00ffcc;
+        }
+        .nav-link {
+            color: #00ffcc !important;
+            font-size: 1rem;
+        }
+        .nav-link:hover {
+            background-color: #00ffcc;
+            color: #0d0d0d !important;
+        }
+        .section-title {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed #00ffcc;
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+            color: #00ffcc;
+        }
+        .card {
+            background-color: #1c1c1c;
+            border: 1px solid #00ffcc33;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card-title {
+            color: #00ffcc;
+        }
+        .case-image {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        footer {
+            background-color: #1c1c1c;
+            color: #999;
+            padding: 1rem;
+            text-align: center;
+            margin-top: auto;
+        }
+        body {
+            /* Fallback for browsers that don't support dvh */
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+        .btn-tech {
+            color: #00ffcc;
+            border: 1px solid #00ffcc;
+        }
+        .btn-tech:hover {
+            background-color: #00ffcc;
+            color: #0d0d0d;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="profile-header">
+        <img src="./img/profile-image.png" alt="Profile Picture" class="profile-image">
+        <div>
+            <h1>Pierre Georges</h1>
+            <p>Online Portfolio</p>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation Menu -->
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./site/history.html">My History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./site/contact.html">My Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- About Me -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a computer engineering student with a strong interest in UI/UX design, blending logic and style to create intuitive digital systems. I enjoy exploring how code and design intersect to build meaningful experiences.</p>
+    </section>
+
+    <!-- How I Work -->
+    <section id="workflow">
+        <h2 class="section-title">How I Work</h2>
+        <p>I build using structured processes, efficient tools, and clear design principles. Through SEG3125, I am learning to apply heuristic evaluation, accessibility standards, and responsive design to build seamless interfaces.</p>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="projects">
+        <h2 class="section-title">My Designs</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card" onclick="notify('Service Site')">
+                    <img src="./img/modern-web-design-concept-with-flat-design/356443-PB4V9F-571.jpg" class="card-img-top case-image" alt="Service Site">
+                    <div class="card-body">
+                        <h5 class="card-title">Service Site</h5>
+                        <a href="./site/serviceSite.html" class="btn btn-tech w-100" id ="service site"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" onclick="notify('Small Game')">
+                <div class="card">
+                    <img src="./img/videogames-background-design/OM6UV00.jpg" class="card-img-top case-image" alt="Small Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Small Game</h5>
+                        <a href="./site/smallGame.html" class="btn btn-tech w-100" id="small Game"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card" onclick="notify('E-commerce Site')">
+                    <img src="img/shopping-with-technological-devices/139280-OT8HQA-203.jpg" class="card-img-top case-image" alt="E-commerce Site">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Site</h5>
+                        <a href="site/eCommerceSite.html" class="btn btn-tech w-100" id="e-Commerce site"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card" onclick="notify('Analytics Site')">
+                    <img src="img/startup-with-laptops/preview.jpg" class="card-img-top case-image" alt="Analytics Site">
+                    <div class="card-body">
+                        <h5 class="card-title">Analytics Site</h5>
+                        <a href="site/analyticsSite.html" class="btn btn-tech w-100" id="analytics site"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2025 Pierre Georges Portfolio
+</footer>
+
+<!-- JavaScript -->
+<script>
+    const d = new Date().getDate(), m = new Date().getMonth();
+    let aS, eCS, sS, sG;
+
+    if (d < 8 || m < 5){
+        sS = "coming soon at June 8";
+        sG = "coming soon at June 22";
+        eCS = "coming soon at July 6";
+        aS = "coming soon at June 20";
+    }else if (d < 22 || m < 5){
+        sS = "accessible now";
+        sG = "coming soon at June 22";
+        eCS = "coming soon at July 6";
+        aS = "coming soon at June 20";
+    }else if (d < 6 || m < 6){
+        sS = "accessible now";
+        sG = "accessible now";
+        eCS = "coming soon at July 6";
+        aS = "coming soon at June 20";
+    }else if (d < 20 || m < 6){
+        sS = "accessible now";
+        sG = "accessible now";
+        eCS = "accessible now";
+        aS = "coming soon at June 20";
+    }else{
+        sS = "accessible now";
+        sG = "accessible now";
+        eCS = "accessible now";
+        aS = "accessible now";
+    }
+    function notify(project) {
+        let state;
+        if (project == "Service Site"){
+            state = project+" is "+sS+". Stay tuned! 🚀";
+        }else if(project == "Small Game"){
+            state = project+" is "+sG+". Stay tuned! 🚀";
+        }else if(project == "E-commerce Site"){
+            state = project+" is "+eCS+". Stay tuned! 🚀";
+        }else if(project == "Analytics Site"){
+            state = project+" is "+aS+". Stay tuned! 🚀";
+        }
+        else{
+            state = "Error information not found";
+        }
+
+        alert(state);
+    }
+    document.getElementById("service site").innerHTML = sS;
+    document.getElementById("small Game").innerHTML = sG;
+    document.getElementById("e-Commerce site").innerHTML = eCS;
+    document.getElementById("analytics site").innerHTML = aS;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
