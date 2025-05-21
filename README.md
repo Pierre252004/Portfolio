@@ -49,8 +49,7 @@ Alternatively, to run it locally:
 -----------------------
 5. Author Info
 -----------------------
-Pierre Georges
-Student number:300283706
+Pierre GeorgesStudent number:300283706
 UOttawa email: pgeor012@uottawa.ca
 Email: pierregeorges.georges@gmail.com
 GitHub: https://github.com/pierre252004
@@ -63,5 +62,5 @@ Bootstrap. (2023). Bootstrap v5.3 Documentation. Retrieved from https://getboots
 -----------------------
 7. Style/Script used
 -----------------------
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css " rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js "></script>
