@@ -34,7 +34,7 @@ Alternatively, to run it locally:
 - css/                → Folder containing custom styles (e.g., `style.css`)
 - js/                 → JavaScript logic (if any added)
 - img/                → Folder for personal or decorative images
-- site                → containt all the other HTML files
+- site                → Contains all the other HTML files
 - README.txt          → This file
 
 -----------------------
