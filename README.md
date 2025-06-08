@@ -5,7 +5,7 @@ Project Title: Pierre Georges – Portfolio Website
 Author: Pierre Georges
 Student number: 300283706
 Date: 25 May 2024  
-URL: https://pierre252004.github.io/Portfolio/index.html
+URL: https://pierre252004.github.io/Portfolio/
 
 **1. Project Description**
 -----------------------
@@ -16,7 +16,7 @@ The website is designed to be elegant and technology-focused, using a classic ae
 **2. How to View the Website**
 -----------------------
 You can view the live site at:  
-https://pierre252004.github.io/Portfolio/index.html
+https://pierre252004.github.io/Portfolio/
 
 Alternatively, to run it locally:
 1. Download and unzip this folder.
