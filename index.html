@@ -187,7 +187,7 @@
                     <img src="./img/startup-with-laptops/preview.jpg" class="card-img-top case-image" alt="Analytics Site">
                     <div class="card-body">
                         <h5 class="card-title">Analytics Site</h5>
-                        <a href="./site/analyticsSite" class="btn btn-tech w-100" id="analytics site"></a>
+                        <a href="https://pierre252004.github.io/uniEnrolDash/" class="btn btn-tech w-100" id="analytics site"></a>
                     </div>
                 </div>
             </div>
@@ -203,33 +203,10 @@
 <script>
     const d = new Date().getDate(), m = new Date().getMonth();
     let aS, eCS, sS, sG;
-
-    if (d < 8 || m < 5){
-        sS = "coming soon on June 8";
-        sG = "coming soon on June 22";
-        eCS = "coming soon on July 6";
-        aS = "coming soon on June 20";
-    }else if (d < 22 || m < 5){
-        sS = "accessible now";
-        sG = "coming soon on June 22";
-        eCS = "coming soon on July 6";
-        aS = "coming soon on June 20";
-    }else if (d < 6 || m < 6){
-        sS = "accessible now";
-        sG = "accessible now";
-        eCS = "coming soon on July 6";
-        aS = "coming soon on June 20";
-    }else if (d < 20 || m < 6){
-        sS = "accessible now";
-        sG = "accessible now";
-        eCS = "accessible now";
-        aS = "coming soon on June 20";
-    }else{
-        sS = "accessible now";
-        sG = "accessible now";
-        eCS = "accessible now";
-        aS = "accessible now";
-    }
+    sS = "accessible now";
+    sG = "accessible now";
+    eCS = "accessible now";
+    aS = "accessible now";
     function notify(project) {
         let state;
         if (project == "Service Site"){
