@@ -169,16 +169,7 @@
                     <img src="./img/game.png" class="card-img-top case-image" alt="Small Game">
                     <div class="card-body">
                         <h5 class="card-title">Small Game</h5>
-                        <a href="https://anonumus1.github.io/HexSudoku/" class="btn btn-tech w-100" id="small Game"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card" onclick="notify('E-commerce Site')">
-                    <img src="img/shopping-with-technological-devices/139280-OT8HQA-203.jpg" class="card-img-top case-image" alt="E-commerce Site">
-                    <div class="card-body">
-                        <h5 class="card-title">E-commerce Site</h5>
-                        <a href="site/eCommerceSite" class="btn btn-tech w-100" id="e-Commerce site"></a>
+                        <a href="https://pierre252004.github.io/HexSudoku/" class="btn btn-tech w-100" id="small Game"></a>
                     </div>
                 </div>
             </div>
@@ -202,10 +193,9 @@
 <!-- JavaScript -->
 <script>
     const d = new Date().getDate(), m = new Date().getMonth();
-    let aS, eCS, sS, sG;
+    let aS, sS, sG;
     sS = "accessible now";
     sG = "accessible now";
-    eCS = "accessible now";
     aS = "accessible now";
     function notify(project) {
         let state;
@@ -213,8 +203,6 @@
             state = project+" is "+sS+". Stay tuned! 🚀";
         }else if(project == "Small Game"){
             state = project+" is "+sG+". Stay tuned! 🚀";
-        }else if(project == "E-commerce Site"){
-            state = project+" is "+eCS+". Stay tuned! 🚀";
         }else if(project == "Analytics Site"){
             state = project+" is "+aS+". Stay tuned! 🚀";
         }
@@ -226,7 +214,6 @@
     }
     document.getElementById("service site").innerHTML = sS;
     document.getElementById("small Game").innerHTML = sG;
-    document.getElementById("e-Commerce site").innerHTML = eCS;
     document.getElementById("analytics site").innerHTML = aS;
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
